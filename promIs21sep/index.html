@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>REGISTRO DE CALIFICACIONES</h1>
+    <form id="formulario">
+        Nombre: <input type="text" required id="nombre" name="nombre" minlength="3" maxlength="20">
+        Calificacion 1: <input type="number" required id="cal1" min="0" max="10" step="0.1">
+        Calificacion 2: <input type="number" required id="cal2" min="0" max="10" step="0.1">
+        Calificacion 3: <input type="number" required id="cal3" min="0" max="10" step="0.1">
+        <input type="submit" value="Registrar Alumno">
+    </form>
+    <h2>Alumnos Registrados</h2>
+    <ol id="lista"></ol>
+    
+    <script src="main.js"></script>
+</body>
+</html>
