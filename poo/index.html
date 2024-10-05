@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Registro y consulta de alumnos</h1>
+    <form id="formulario"> 
+        Nombre: <input type="text" id="nombre" placeholder="Ingresa tu nombre"><br>
+        Apellido: <input type="text" id="apellido" placeholder="Ingresa tu apellido"><br>
+        Calificacion 1: <input type="number" min="0" max="10" step="0.1" id="cal1">
+        Calificacion 2: <input type="number" min="0" max="10" step="0.1" id="cal2">
+        Calificacion 3: <input type="number" min="0" max="10" step="0.1" id="cal3"><br>
+        <input type="submit" value="Guardar y Mostrar">
+    </form>
+    <div>
+        <h2>Alumnos y Calificaciones</h2>
+        <ul id="salida"></ul> 
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
