@@ -1,0 +1,18 @@
+class Alumno{
+    constructor(nombre, edad, sexo){ //este metodo le permite reproducirse, en el parentesis se ponen las caracteristicas
+        this.nombre = nombre; //this: justo el que estas trabajando ahorita
+        this.edad = edad;
+        this.sexo = sexo;
+       // this.direccion = direccion; // esto es valido, pero al no estar en el parentecis de atributos no es obligatoria
+    }
+    verDatos(){ // un metodo que da esa impresion de datos para no llamar cada uno por separado
+        console.log(`Nombre: ${this.nombre} Edad: ${this.edad} Sexo: ${this.sexo}`); // this. para indicar que me imprima esta que estoy usando en este momento me imprima
+    }
+}
+
+var alumno1 = new Alumno ("Juan", 25, "hombre"); //Estoy creando un objeto y guardadolo en una variable
+var alumno2 = new Alumno ("Pedro", 30, "hombre");
+var alumno3 = new Alumno ("Lupita", 18, "mujer");
+alumno1.verDatos();
+alumno2.verDatos();
+alumno3.verDatos();
